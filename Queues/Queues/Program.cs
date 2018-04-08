@@ -10,6 +10,13 @@ namespace Queues
     {
         static void Main(string[] args)
         {
+            NickQueue<int> queue = new NickQueue<int>();
+
+            queue.Enqueue(23);
+            queue.Enqueue(33);
+            queue.Enqueue(3344);
+            queue.Dequeue();
+            queue.Dequeue();
         }
     }
 }
